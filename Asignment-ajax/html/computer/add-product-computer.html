@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../css/computer/add.css">
+</head>
+<body>
+
+<h1>Form Create Product</h1>
+<form id="add-product">
+    <table>
+        <tr>
+            <td><label for="code">Product Code:</label></td>
+            <td><input type="text" id="code" placeholder="Enter product code"></td>
+        </tr>
+        <tr>
+            <td><label for="name">Product Name:</label></td>
+            <td><input type="text" id="name" placeholder="Enter product name"></td>
+        </tr>
+        <tr>
+            <td><label for="producer">Producer:</label></td>
+            <td>
+                <select id="producer">
+                    <option value="Dell">Dell</option>
+                    <option value="Apple">Apple</option>
+                    <option value="HP">HP</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Acer">Acer</option>
+                    <option value="Intel">Intel</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="type">Product Type:</label></td>
+            <td>
+                <select id="type">
+                    <option value="" disabled selected>Loading...</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" id="addComputer" value="Add Product"></td>
+        </tr>
+    </table>
+</form>
+<script src="../../js/computer/add.js"></script>
+
+</body>
+</html>

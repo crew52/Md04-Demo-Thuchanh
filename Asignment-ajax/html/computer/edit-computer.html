@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Computer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../css/computer/edit.css">
+</head>
+<body>
+<h2>Edit Computer</h2>
+
+<label>ID:</label>
+<input type="text" id="computerId" disabled />
+
+<label>Code:</label>
+<input type="text" id="computerCode" />
+
+<label>Name:</label>
+<input type="text" id="computerName" />
+
+<label>Producer:</label>
+<input type="text" id="computerProducer" />
+
+<label>Type:</label>
+<select id="computerType"></select> <!-- Dropdown chọn Type -->
+
+<button onclick="updateComputer()">Save</button>
+<button onclick="window.history.back()">Cancel</button>
+
+<script src="../../js/computer/edit.js"></script>
+</body>
+</html>

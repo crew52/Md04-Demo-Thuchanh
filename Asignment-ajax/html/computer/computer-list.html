@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../css/computer/list.css">
+</head>
+<body>
+<button onclick="window.location.href='add-product-computer.html'">Add New Product</button>
+<a href="../type/types-list.html" class="add-btn">Type</a>
+
+<h2>Computer List</h2>
+
+<div style="text-align: center;">
+    <label for="typeFilter">Filter by Type:</label>
+    <select id="typeFilter">
+        <option value="">All Types</option>
+    </select>
+    <button onclick="filterComputers()">Filter</button>
+</div>
+
+<label for="searchInput">Search Name:</label>
+<input type="text" id="searchInput" placeholder="Enter name..." />
+<button id="searchButton">Search</button>
+
+<label for="pageSize">Page Size:</label>
+<select id="pageSize">
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="5" selected>5</option>
+    <option value="10">10</option>
+</select>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Producer</th>
+        <th>Type</th>
+        <th>Actions</th> <!-- Thêm cột Actions -->
+    </tr>
+    </thead>
+    <tbody id="computerTableBody">
+    <!-- Data will be inserted here -->
+    </tbody>
+</table>
+
+
+<button id="prevPage">Previous</button>
+<span id="pageInfo"></span>
+<button id="nextPage">Next</button>
+
+<script src="../../js/computer/computer.js"></script>
+
+</body>
+</html>
